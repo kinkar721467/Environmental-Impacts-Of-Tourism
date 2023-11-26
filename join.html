@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background: url('style/images/box-2.jpg') center/cover;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .container .left iframe {
+            height: 100%;
+            width: 100%;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+        .right h1 {
+            color: white;
+            text-shadow: 4px 4px 4px black;
+        }
+        .right a {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background: green;
+            text-decoration: none;
+            color: white;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .right a:hover {
+            background: orange;
+            color: black;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNmMhaHKZL5ZZXf6e-G4kO2vTL1s6KvO-Pw9C1FtWGBoywiA/viewform?embedded=true" width="640" height="853" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="right">
+            <h1>Without fill the form you <br>cannot eligible for gift</h1>
+            <a href="https://creator.voiceflow.com/prototype/656306d1e7a384ca96b063e4">Click Here</a>
+        </div>
+    </div>
+</body>
+</html>
